@@ -1,4 +1,4 @@
-FROM openjdk:11-jre-slim
+FROM openjdk:17-jre-slim
 
 ENV TIMEOUT 2h
 ENV VAULT_NAME demoVault
@@ -8,7 +8,7 @@ ENV CRYPTOMATOR_PORT 8181
 
 EXPOSE 8181
 
-COPY cryptomator-cli-0.4.0.jar /usr/local/bin/cryptomator-cli.jar
+COPY cryptomator-cli-0.5.0.jar /usr/local/bin/cryptomator-cli.jar
 
 COPY boot.sh /usr/local/bin/boot.sh
 # change permission
