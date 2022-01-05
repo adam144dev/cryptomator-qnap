@@ -1,7 +1,7 @@
-docker build -t example_image .
+docker build  --platform linux/amd64 -t example_image .
 
 
-docker tag example_image:latest vh13294/cryptomator-synology:latest
+docker tag example_image:latest denniskcheung/cryptomator-synology:latest
 
 
-docker push vh13294/cryptomator-synology:latest
+docker push denniskcheung/cryptomator-synology:latest
