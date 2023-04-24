@@ -1,4 +1,4 @@
-FROM openjdk:17-slim
+FROM openjdk:20-slim
 
 ENV TIMEOUT 2h
 ENV VAULT_NAME demoVault

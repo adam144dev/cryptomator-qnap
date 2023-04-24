@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="cryptomator-cli-0.5.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/cryptomator-cli-0.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
