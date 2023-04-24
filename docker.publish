@@ -1,6 +1,5 @@
 docker build  --platform linux/amd64 -t example_image .
 
-
 docker tag example_image:latest denniskcheung/cryptomator-synology:latest
 
 

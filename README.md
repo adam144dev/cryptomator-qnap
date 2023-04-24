@@ -3,6 +3,9 @@
 Mount Cryptomator directly in your Synology NAS.
 The files will be accessible via WebDav protocol.
 
+- cryptomator-synology:vault-format-8
+- cryptomator-synology:vault-format-7
+
 Docker Hub:
 https://hub.docker.com/r/vh13294/cryptomator-synology
 
@@ -18,6 +21,7 @@ In Synology NAS
 
 - Environment
   - TIMEOUT: 2h (server will shutdown after 2h of running)
+  - TIMEOUT: 0 (disable timeout and server will run indefinitely)
   - VAULT_NAME: demoVault
   - VAULT_PATH: /cryptomatorDir
   - VAULT_PASS: password
