@@ -1,6 +1,5 @@
 FROM openjdk:20-slim
 
-ENV TIMEOUT 2h
 ENV VAULT_NAME demoVault
 ENV VAULT_PATH /cryptomatorDir
 ENV VAULT_PASS password
@@ -15,4 +14,4 @@ COPY boot.sh /usr/local/bin/boot.sh
 RUN chmod +x /usr/local/bin/boot.sh
 
 # run at startup
-CMD timeout $TIMEOUT /usr/local/bin/boot.sh
+CMD /usr/local/bin/boot.sh
